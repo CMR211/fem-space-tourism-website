@@ -11,6 +11,10 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
   - [Built with](#built-with)
 - [Author](#author)
 
+## Live site
+
+[Live site on netifly](https://cmr211-fem-space-tourism-website.netlify.app)
+
 ## Overview
 
 ### The challenge
@@ -34,10 +38,6 @@ Users should be able to:
 ![](./screenshots/desktop-destination.png)
 
 ![](./screenshots/desktop-crew.png)
-
-### Links
-
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ### Built with
 
