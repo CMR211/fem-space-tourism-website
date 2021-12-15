@@ -1,0 +1,744 @@
+
+
+/* TABLE OF CONTENTS */
+
+/* 1.  Global styles */
+    /* 1.1.  Global variables */
+    /* 1.2.  Headings and text-styles */
+    /* 1.3.  Set backgrounds for different resolutions */
+    /* 1.4.  Set react-app to fully stretch */
+    /* 1.5.  Ripple buttons */
+
+/* 2.  Navbar */
+    /* 2.1.  General navbar styles */
+    /* 3.2.  Mobile navbar styles */
+    /* 3.3.  Fullscreen navbar styles */
+
+/* 3.  Frontpage page styles */
+
+/* 4.  Destination page styles */
+
+/* 5.  Crew page styles */
+
+/* 6.  Technology Page  */
+
+/* 7.  Footer */
+
+
+
+
+
+
+
+
+
+/* 1.  Global styles */
+
+/* 1.1.  Global variables */
+
+* {
+    /* quick css fixes */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* colors given */
+    --color-dark: hsl(230deg 35% 7%);
+    --color-blue: hsl(231deg 77% 90%);
+    --color-white: hsl(0deg 0% 100%);
+
+    /* fonts given */
+    --font-heading: "Bellefair", serif;
+    --font-text: "Barlow Condensed", sans-serif;
+
+    /* general text styling */
+    color: var(--color-white);
+    font-weight: 400;
+}
+
+img {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+/* 1.2.  Headings and text-styles */
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(80px, 21.33vw, 150px);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(56px, calc(52.5px + 3.93vw), 100px);
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: var(--font-heading);
+    font-size: clamp(28px, calc(24.5px + 2.21vw), 56px);
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: var(--font-heading);
+    font-size: clamp(24px, calc(18.5px + 1.93vw), 32px);
+    text-transform: uppercase;
+}
+
+h5 {
+    font-family: var(--font-text);
+    font-size: clamp(16px, 2.5vw, 28px);
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: var(--color-blue)
+}
+
+.subheading1 {
+    font-family: var(--font-heading);
+    font-size: clamp(16px, calc(12.5px + 2.21vw), 28px);
+    text-transform: uppercase;
+}
+
+.subheading2 {
+    font-family: var(--font-text);
+    font-size: 16px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+}
+
+.navtext {
+    font-family: var(--font-text);
+    font-size: calc(16px * var(--font-size-multiplier));
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+}
+
+.bodytext {
+    color: var(--color-blue);
+    font-family: var(--font-text);
+    font-size: clamp(15px, calc(5px + 1.57vw), 18px);
+    line-height: 1.78em;
+    font-weight: 200;
+    letter-spacing: 0.056em;
+}
+
+
+
+
+
+
+
+
+
+/* 1.3.  Set backgrounds for different resolutions */
+/* Done in react.js, it was faster that way */
+
+
+
+
+
+
+
+
+
+/* 1.4.  Set react-app to fully stretch */
+
+html {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#react-app {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+/* 1.5.  Ripple buttons */
+
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background: white radial-gradient(circle, transparent 1%, white 1%) center/15000%;
+    cursor: pointer;
+}
+
+.ripple:active {
+    background-color: var(--color-blue);
+    background-size: 100%;
+    transition: background 0s;
+}
+
+
+
+
+
+
+
+
+
+/* 2.  Navbar */
+
+/* 2.1.  General navbar styles */
+
+.navbar {
+    width: 100%;
+    height: 96px;
+    padding-left: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    scale: calc(40 / 48);
+}
+
+.navbar img+img {
+    scale: 1;
+}
+
+.navbar div {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.navbar button {
+    font-size: 1.4em;
+    border: none;
+    background: none;
+    font-family: var(--font-text);
+}
+
+.navbar button:hover {
+    cursor: pointer;
+    color: var(--color-blue)
+}
+
+.navbar #navbar-btn-container {
+    padding-right: 24px;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+/* 3.2.  Mobile navbar styles */
+
+#mobile-navbar {
+    position: fixed;
+    width: 60vw;
+    height: 100vh;
+    /* background-color: blue; */
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3em;
+    z-index: 1;
+    backdrop-filter: blur(20px);
+}
+
+#mobile-navbar button {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+}
+
+#mobile-navbar div p:first-child {
+    font-weight: bold;
+    width: 1.8em;
+}
+
+#mobile-navbar p+p {
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+#mobile-navbar p+p:hover {
+    cursor: pointer;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+#touch-space {
+    position: fixed;
+    left: 0;
+    top: 96px;
+    transform: translateX(-40vw);
+    height: 100vh;
+    width: 40vw;
+}
+
+
+
+
+
+
+
+
+
+/* 3.3.  Fullscreen navbar styles */
+
+#fullscreen-navbar {
+    padding: 0 24px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    height: 100%;
+    gap: 3em;
+}
+
+#fullscreen-navbar div {
+    height: calc(100% - 4px);
+    transition: 300ms;
+}
+
+#fullscreen-navbar div:hover {
+    cursor: pointer;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+
+
+
+
+
+
+
+
+/* 3.  Frontpage page styles */
+
+#frontpage {
+    min-height: calc(100vh - 96px);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#frontpage * {
+    text-align: center;
+}
+
+#frontpage>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    max-width: 30rem;
+}
+
+@media (min-width: 1000px) {
+    #frontpage {
+        margin-right: 25vw;
+    }
+}
+
+.big-btn {
+    margin-top: 1em;
+    width: 7.5em;
+    height: 7.5em;
+    border-radius: 50%;
+    border: none;
+    color: var(--color-dark);
+    font-family: var(--font-heading);
+    letter-spacing: 0.054em;
+    text-transform: uppercase;
+    font-size: clamp(20px, 5vw, 32px);
+    transition: box-shadow 800ms ease-in-out;
+}
+
+@media (min-width: 1300px) {
+    .big-btn:hover {
+        box-shadow: 0 0 0 1em rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 4.  Destination page styles */
+
+#destinationpage {
+    width: 100%;
+    min-height: calc(100vh - 96px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 24px;
+    gap: 2rem;
+}
+
+@media (min-width: 700px) {
+    #destinationpage h5 {
+        align-self: flex-start;
+    }
+}
+
+#destinationpage h5 span {
+    color: gray;
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+#destinationpage img {
+    width: clamp(170px, 40%, 445px);
+}
+
+#destinationpage>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#destinationpage>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    padding: 0 4em 0 4em;
+    gap: 1rem;
+}
+
+#destinationpage>div>div>div {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+#destinationpage p {
+    text-align: center;
+    max-width: 40rem;
+}
+
+#destinationpage .border-bottom {
+    width: min(50vw, 30rem);
+    border-bottom: 2px solid #3b3b4b;
+}
+
+#destinationpage #planet-navbar .navtext {
+    padding-bottom: 1rem;
+    --border-style: 2px solid transparent;
+}
+
+#destinationpage #planet-navbar .navtext:hover {
+    --border-style: 2px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+#destinationpage #planet-details {
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    text-align: center;
+}
+
+#destinationpage #planet-details p {
+    color:rgba(255, 255, 255, 0.5)
+}
+
+#destinationpage #planet-details h4+p {
+    margin-top: 1rem;
+}
+
+
+@media (min-width: 1300px) {
+
+    #destinationpage h5 {
+        margin: 3rem 8rem;
+    }
+
+    #destinationpage>div {
+    flex-direction: row;
+    }
+
+    #destinationpage>div>div {
+        align-items: flex-start;
+        gap: 3rem;
+
+    }
+
+    #destinationpage>div * {
+        text-align: start;
+    }
+
+    #destinationpage #planet-details {
+        flex-direction: row;
+        gap: 4rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 5.  Crew page styles */
+
+#crewpage {
+    min-height: calc(100vh - 96px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+    gap: 2em;
+}
+
+#crewpage h5 span {
+    color: gray;
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+#crewpage-img-div {
+    border-bottom: 1px solid #3b3b4b;
+    display: flex;
+    justify-content: center;
+}
+
+#crewpage-img-div img{
+    max-height: 40vh;
+}
+
+#crewpage>div {
+    display: flex;
+    align-items: center;
+}
+
+#crewpage-btn-div {
+    flex-direction: row;
+    gap: 1.4em;
+}
+
+#crewpage-btn-div * {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+#crewpage-btn-div *:hover {
+    cursor: pointer;
+}
+
+#crewpage-bio-div {
+    flex-direction: column;
+    max-width: 40rem;
+    text-align: center;
+    gap: 1em;
+}
+
+#crewpage-bio-div h4 {
+    color:rgba(255, 255, 255, 0.5);
+    transform: scale(0.75);
+}
+
+@media (min-width: 700px) {
+
+    #crewpage h5 {
+        align-self: flex-start;
+    }
+}
+
+@media (min-width: 1300px) {
+
+    #crewpage h5 {
+        margin: 3rem 8rem;
+    }
+
+    #crewpage-img-div {
+        position: absolute;
+        bottom: 0;
+        right: 20%;
+        transform: translateY(-50%);
+    }
+
+    #crewpage-img-div img {
+        transform: scale(2);
+    }
+
+    #crewpage-bio-div {
+        transform: translate(-20vw, 15vh);
+    }
+
+    #crewpage-btn-div {
+        transform: translate(-20vw, 15vh);
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 6. Technology Page  */
+
+#technologypage {
+    min-height: calc(100vh - 96px);
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+}
+
+#technologypage h5 {
+    margin-top: 2em;
+}
+
+#technologypage h5 span {
+    color: gray;
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+#tech-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tech-nav-div {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    margin-top: 2rem;
+}
+
+#tech-nav-div button {
+    --theme-color: rgba(255, 255, 255, 0.2);
+    background: var(--bg-color);
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: 1px solid var(--theme-color);
+}
+
+#tech-nav-div button:hover {
+    background-color: var(--theme-color) !important;
+    cursor: pointer;
+}
+
+#tech-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 2em;
+    max-width: 30rem;
+    margin: 0 2em;
+    text-align: center;
+}
+
+#technologypage img {
+    width: 100vw;
+    object-fit: contain;
+}
+
+@media (min-width: 1300px) {
+
+    #technologypage {
+        display: block;
+    }
+
+    #technologypage>h5 {
+        margin: 3rem 8rem;
+    }
+
+    #technologypage img {
+        width: 35rem;
+        position: absolute;
+        right: 0;
+        top: 55%;
+        transform: translateY(-50%);
+    }
+
+    #tech-div {
+        justify-items: flex-start;
+        flex-direction: row;
+        margin-left: 10vw;
+    }
+
+    #tech-nav-div {
+        flex-direction: column;
+    }
+
+    #tech-text {
+        text-align: start;
+        align-items: flex-start;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 7.  Footer */
+
+footer {
+    transform: scale(0.66);
+    opacity: 0.66;
+    position: absolute;
+    bottom: 0;
+    right: -1rem;
+    text-align: end;
+    margin: 0;
+}
+
+footer * {
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+}

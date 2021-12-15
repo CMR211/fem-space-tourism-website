@@ -1,0 +1,157 @@
+{
+  "headings": {
+    "frontpage": {
+      "subheading": ["So, you want to travel to", "A zatem, chcesz się wybrać w"],
+      "title": ["Space", "Kosmos"],
+      "paragraph": ["Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!", "Spójrzmy prawdzie w oczy – jeśli chcesz polecieć w kosmos, równie dobrze możesz naprawdę polecieć w kosmos, a nie unosić się na jego krawędzi. A zatem, usiądź wygodnie i zrelaksuj się, bo zapewnimy Ci doświadczenie naprawdę nie z tego świata!"],
+      "button": ["Explore", "Odkrywaj"]
+    },
+    "navbar": {
+      "home": ["home", "początek"],
+      "destination": ["destination", "cel podróży"],
+      "crew": ["crew", "załoga"],
+      "technology": ["technology", "technologia"]
+    },
+    "destinationpage": {
+      "title": ["Pick your destination", "Wybierz cel swojej podróży"],
+      "distance": ["Avg. distance", "Śr. odległość"],
+      "traveltime": ["Est. travel time", "Przewidywana dł. lotu"]
+    },
+    "crewpage": {
+      "title": ["Meet your crew", "Poznaj swoją załogę"]
+    },
+    "technologypage": {
+      "title": ["Space launch 101", "Lot w kosmos na skróty"],
+      "terminology": ["The terminology...", "Terminologia..."]
+    }
+  },
+  "destinations": [
+    {
+      "name": ["Moon", "Księżyc"],
+      "images": {
+        "png": "./assets/destination/image-moon.png",
+        "webp": "./assets/destination/image-moon.webp"
+      },
+      "description": 
+        ["See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.", 
+         "Ujrzyj naszą planetę jak nigdy dotąd. Doskonale relaksująca wycieczka pozwalająca odzyskać utraconą perspektywę oraz naładować baterie. W ramach wyprawy lekcja historii w postaci odwiedzin stref lądowania Apollo 11 i Luna 2."],
+      "distance": ["384,400 km", "384 400 km"],
+      "travel": ["3 days", "3 dni"]
+    },
+    {
+      "name": ["Mars", "Mars"],
+      "images": {
+        "png": "./assets/destination/image-mars.png",
+        "webp": "./assets/destination/image-mars.webp"
+      },
+      "description": 
+        ["Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
+         "Nie zapomnij spakować dobrych traperów. Będą potrzebne do zdobycia Olympus Mons, największej góry w naszym układzie słonecznym. Jest większa od Mount Everestu ponad dwa i pół razy!"],
+      "distance": ["225 mil. km", "225 mln km"],
+      "travel": ["9 months", "9 miesięcy"]
+    },
+    {
+      "name": ["Europa", "Europa"],
+      "images": {
+        "png": "./assets/destination/image-europa.png",
+        "webp": "./assets/destination/image-europa.webp"
+      },
+      "description": 
+        ["The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
+         "Najmniejszy z czterech księżyców galileusza orbitujących Jowisza - Europa to marzenie każdego miłośnika zimy. Ze swoją lodową pokrywą, jest perfekcyjnym miejscem na łyżwy, curling czy hokej oraz na zwyczajny odpoczynek w zasypanej śniegiem chacie."],
+      "distance": ["628 mil. km", "628 mln km"],
+      "travel": ["3 years", "3 lata"]
+    },
+    {
+      "name": ["Titan", "Tytan"],
+      "images": {
+        "png": "./assets/destination/image-titan.png",
+        "webp": "./assets/destination/image-titan.webp"
+      },
+      "description": 
+        ["The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
+         "Jedyny księżyc posiadający atmosferę gęstą jak Ziemia, Tytan jest prawie jak dom daleko od domu (tylko sto stopni chłodniejszy!). W prezencie oferuje wspaniały widok na pierścienie Saturna."],
+      "distance": ["1.6 bil. km", "1,6 mld km"],
+      "travel": ["7 years", "7 lat"]
+    }
+  ],
+  "crew": [
+    {
+      "name": "Douglas Hurley",
+      "images": {
+        "png": "./assets/crew/image-douglas-hurley.png",
+        "webp": "./assets/crew/image-douglas-hurley.webp"
+      },
+      "role": ["Commander", "Dowódca"],
+      "bio": 
+        ["Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
+         "Douglas Gerald Hurley jest amerykańskim inżynierem, byłym pilotem Korpusu Piechoty Morskiej i byłym astronautą NASA. Po raz trzeci wystartował w kosmos jako dowódca statku Crew Dragon Demo-2."]
+    },
+    {
+      "name": "Mark Shuttleworth",
+      "images": {
+        "png": "./assets/crew/image-mark-shuttleworth.png",
+        "webp": "./assets/crew/image-mark-shuttleworth.webp"
+      },
+      "role": ["Mission Specialist", "Specjalista misji"],
+      "bio": 
+      ["Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
+       "Mark Richard Shuttleworth jest założycielem i dyrektorem generalnym Canonical, firmy stojącej za systemem operacyjnym Ubuntu opartym na Linuksie. Shuttleworth został pierwszym południowoafrykańczykiem, który odbył podróż w kosmos jako kosmiczny turysta."]
+    },
+    {
+      "name": "Victor Glover",
+      "images": {
+        "png": "./assets/crew/image-victor-glover.png",
+        "webp": "./assets/crew/image-victor-glover.webp"
+      },
+      "role": ["Pilot", "Pilot"],
+      "bio": 
+        ["Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.",
+         "Pilot pierwszego lotu operacyjnego SpaceX Crew Dragon na Międzynarodową Stację Kosmiczną. Glover jest komandorem w Marynarce Wojennej Stanów Zjednoczonych, gdzie pilotuje samolot F/A-18.Był członkiem załogi Ekspedycji 64 i służył jako inżynier lotu systemów stacji."]
+
+    },
+    {
+      "name": "Anousheh Ansari",
+      "images": {
+        "png": "./assets/crew/image-anousheh-ansari.png",
+        "webp": "./assets/crew/image-anousheh-ansari.webp"
+      },
+      "role": ["Flight Engineer", "Inżynier lotu"],
+      "bio": 
+        ["Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.",
+         "Anousheh Ansari jest irańsko-amerykańskim inżynierem i współzałożycielką firmy Prodea Systems. Ansari była czwartą samodzielnie finansowaną turystką kosmiczną, pierwszą samodzielnie finansowaną kobietą, która poleciała na ISS i pierwszym Irańczykiem w kosmosie."]
+    }
+  ],
+  "technology": [
+    {
+      "name": ["Launch vehicle", "Rakieta nośna"],
+      "images": {
+        "portrait": "./assets/technology/image-launch-vehicle-portrait.jpg",
+        "landscape": "./assets/technology/image-launch-vehicle-landscape.jpg"
+      },
+      "description": 
+        ["A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
+         "Rakieta nośna to pojazd z napędem rakietowym służący do wynoszenia ładunku użytecznego z powierzchni Ziemi w przestrzeń kosmiczną, zazwyczaj na orbitę okołoziemską lub poza nią. Nasza rakieta nośna WEB-X jest najpotężniejszą działającą rakietą. Ma 150 metrów wysokości, co sprawia, że jej widok na stanowisku startowym budzi respekt!"]
+    },
+    {
+      "name": ["Spaceport", "Port kosmiczny"],
+      "images": {
+        "portrait": "./assets/technology/image-spaceport-portrait.jpg",
+        "landscape": "./assets/technology/image-spaceport-landscape.jpg"
+      },
+      "description": 
+        ["A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
+         "Port kosmiczny lub kosmodrom to miejsce wystrzeliwania (lub odbierania) statków kosmicznych, analogicznie do portu morskiego dla statków lub lotniska dla samolotów. Nasz kosmodrom, znajdujący się na słynnym Przylądku Canaveral, jest idealnie położony, aby wykorzystać ruch obrotowy Ziemi do wystrzelenia statku kosmicznego."]
+    },
+    {
+      "name": ["Space capsule", "Kapsuła kosmiczna"],
+      "images": {
+        "portrait": "./assets/technology/image-space-capsule-portrait.jpg",
+        "landscape": "./assets/technology/image-space-capsule-landscape.jpg"
+      },
+      "description": 
+        ["A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
+         "Kapsuła kosmiczna to często załogowy statek kosmiczny, który używa kapsuły powrotnej z tępym nadwoziem do ponownego wejścia w atmosferę ziemską bez użycia skrzydeł. Nasza kapsuła to miejsce, w którym spędzisz czas podczas lotu. Znajduje się w niej kosmiczna siłownia, kino i mnóstwo innych atrakcji, które zapewnią Ci rozrywkę."]
+    }
+  ]
+}
